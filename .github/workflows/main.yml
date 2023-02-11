@@ -35,7 +35,7 @@ jobs:
       needs: build 
       environment: 
         name: production 
-        url: http://< WhateverURLThatIsNotTaken >.surge.sh
+        url: http://melted-chickens.surge.sh
       steps: 
         - name: Download the Build Artifact 
           uses: actions/download-artifact@v3.0.0 
