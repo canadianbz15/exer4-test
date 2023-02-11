@@ -39,7 +39,8 @@ jobs:
       steps: 
         - name: Download the Build Artifact 
           uses: actions/download-artifact@v3.0.0 
-          with: name: build
+          with: 
+            name: build
         -name: deploy to surge 
           run: npx surge –project ‘.’ –domain melted-chickens.surge.sh 
           env: 
